@@ -1,0 +1,28 @@
+# Binaries
+bin/
+server
+*.exe
+
+# Models
+models/*.onnx
+models/*.pt
+models/*.weights
+
+# Configuration
+config.json
+
+# Uploads
+uploads/
+
+# Static files (built frontend)
+static/
+
+# Go
+*.out
+coverage.txt
+
+# Testing
+*.test
+
+# Logs
+*.log

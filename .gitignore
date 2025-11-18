@@ -1,0 +1,70 @@
+# Binaries
+server/bin/
+server/server
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.txt
+
+# Go workspace file
+go.work
+
+# Dependency directories
+vendor/
+node_modules/
+
+# Models (too large for git)
+server/models/*.onnx
+server/models/*.pt
+server/models/*.weights
+server/models/*.cfg
+
+# Configuration files with sensitive data
+config.json
+*.env
+.env.local
+.env.production
+
+# Uploads
+server/uploads/
+uploads/
+
+# Static build
+server/static/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Frontend build
+frontend/build/
+frontend/dist/
+frontend/.react-router/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
