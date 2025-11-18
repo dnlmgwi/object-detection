@@ -6,7 +6,7 @@ require (
 	github.com/gorilla/mux v1.8.1
 	github.com/gorilla/websocket v1.5.1
 	github.com/stretchr/testify v1.8.4
-	gocv.io/x/gocv v0.35.0
+	gocv.io/x/gocv v0.42.0
 )
 
 require (

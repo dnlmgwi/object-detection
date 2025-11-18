@@ -208,15 +208,8 @@ func (e *Engine) classifyPlayers(players []models.Player, frame gocv.Mat,
 
 // getDominantColor extracts dominant color from image region (simplified)
 func (e *Engine) getDominantColor(roi gocv.Mat) config.Color {
-	// Convert to HSV for better color matching
-	hsv := gocv.NewMat()
-	defer hsv.Close()
-	gocv.CvtColor(roi, &hsv, gocv.ColorBGRToHSV)
-
-	// Calculate mean color
-	mean := hsv.Mean()
-
-	// Convert back to RGB (simplified, just use mean BGR from original)
+	// Calculate mean BGR color from ROI
+	// For better accuracy, could convert to HSV first, but BGR mean works well
 	meanBGR := roi.Mean()
 
 	return config.Color{
